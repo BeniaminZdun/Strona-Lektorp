@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paweł Wódczyński - Lektor</title>
+    <meta name="description" content="Witam znajdziesz tu czytane przeze mnie bajki, audiobooki czy słuchowiska.
+    Życzę przyjemnego odbioru !">
+    <meta name="keywords" content="Lektor,głos,Paweł Wódczyński,aktor,bajki,słowa,fragmenty,audiobooki,słuchowiska,radio,radiowe,stary,zniszczony">
+    <meta name="author" content="Beniamin Zdun">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="img/logo.jpg" alt="programista" />
+        </header>
+        <div class="nav">
+            <ol>
+                <li><a href="#omnie"><b>O mnie</b></a></li>
+                <li><a href="#"><b>Nagrania</b></a>
+                    <ul>
+                        <li><a href="bajki.html" target="_blank"><b>Bajki</b></a></li>
+                        <li><a href="sluchowiska.html" target="_blank"><b>Słuchowiska</b></a></li>
+                        <li><a href="audiobooki.html" target="_blank"><b>Audiobooki</b></a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" target="_self"><b>Kontakt</b></a></li>
+            </ol>
+        </div>
+        <section>
+            <article>
+                <h1 id="omnie">Paweł Wódczyński - Lektor</h1>
+                <p><img class="left" src="img/pawel.jpg" alt="portert" title="Paweł Wódczyński" /></p>
+                <h2>Witaj!</h2>
+                <div class="aside">Nazywam sie Paweł Wódczyński jestem aktorem i lektorem. Miło mi, że jesteś na mojej stronie. Znajdziesz tu czytane przeze mnie bajki, słowa, zdania, fragmenty i całości, audiobooki czy też słuchowiska radiowe. Jeżeli potrzebujesz ciekawego i przyjemnego, "starego i zniszczonego", delikatnego i mocnego głosu - dobrze trafiłeś. Interesuję Cię współpraca? Napisz lub zadzwoń! Mój głos jest dla Ciebie.
+                    <br /> <br /> Doświadczenie:
+                    <br /> <br /> - od 2015 lektor w Polskim Radiu Merkury w Poznaniu
+                    <br /> <br /> - od 2010 aktor w Narodowym Teatrze Edukacji we Wrocławiu
+                    <br /> <br /> - od 2006 aktor Studia Teatralnego Próby
+                    <br /> <br /> - Słuchowisko " Wiedzmin. Chrzest Ognia"
+                    <br /> <br /> - Biblia Audio - Superprodukcja</div>
+                <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+            </article>
+            <iframe width="450" height="253" src="https://www.youtube.com/embed/V4sckVYw7q8" frameborder="0" allowfullscreen></iframe><iframe width="450" height="253" src="https://www.youtube.com/embed/RO9DRZJcwVc" frameborder="0" allowfullscreen></iframe><iframe width="450" height="253" src="https://www.youtube.com/embed/4lF0hb1sTsA" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <footer>
+            <div class="facebook">
+                <a href="https://www.facebook.com/wodczynskilektor/?fref=ts" target="_blank" title="Facebook"><i class="demo-icon icon-facebook-official"></i></a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/channel/UC2doj1tvXc76yEVAfRCgY4w" target="_blank" title="YouTube"><i class="icon-youtube"></i></a>
+            </div>
+            <div class="strona">
+                <a href="http://naszeczytanie.pl/" target="_blank" title="Naszeczytanie.pl"><i class="icon icon-book-open"></i></a>
+            </div>
+            <b> All rights reserved. &copy; Paweł Wódczyński - Lektor 2017. Created & design by Ben</b>
+        </footer>
+    </div>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
